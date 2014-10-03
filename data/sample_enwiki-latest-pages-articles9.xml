@@ -1,0 +1,314 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.9/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.9/ http://www.mediawiki.org/xml/export-0.9.xsd" version="0.9" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>http://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.24wmf20</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="108" case="first-letter">Book</namespace>
+      <namespace key="109" case="first-letter">Book talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="446" case="first-letter">Education Program</namespace>
+      <namespace key="447" case="first-letter">Education Program talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2600" case="first-letter">Topic</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Professional Players Tournament (snooker)</title>
+    <ns>0</ns>
+    <id>665001</id>
+    <redirect title="World Open (snooker)" />
+    <revision>
+      <id>359952698</id>
+      <parentid>25566787</parentid>
+      <timestamp>2010-05-03T23:48:34Z</timestamp>
+      <contributor>
+        <username>Xqbot</username>
+        <id>8066546</id>
+      </contributor>
+      <minor />
+      <comment>Robot: Fixing double redirect to [[World Open (snooker)]]</comment>
+      <text xml:space="preserve">#REDIRECT [[World Open (snooker)]]</text>
+      <sha1>lxtjwcda9vk58fphj8ie2logjm607mv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Rothmans Grand Prix</title>
+    <ns>0</ns>
+    <id>665002</id>
+    <redirect title="World Open (snooker)" />
+    <revision>
+      <id>359952720</id>
+      <parentid>27271001</parentid>
+      <timestamp>2010-05-03T23:48:39Z</timestamp>
+      <contributor>
+        <username>Xqbot</username>
+        <id>8066546</id>
+      </contributor>
+      <minor />
+      <comment>Robot: Fixing double redirect to [[World Open (snooker)]]</comment>
+      <text xml:space="preserve">#REDIRECT [[World Open (snooker)]]</text>
+      <sha1>lxtjwcda9vk58fphj8ie2logjm607mv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Rothmans Grand Prix (snooker)</title>
+    <ns>0</ns>
+    <id>665003</id>
+    <redirect title="World Open (snooker)" />
+    <revision>
+      <id>359952733</id>
+      <parentid>25566784</parentid>
+      <timestamp>2010-05-03T23:48:44Z</timestamp>
+      <contributor>
+        <username>Xqbot</username>
+        <id>8066546</id>
+      </contributor>
+      <minor />
+      <comment>Robot: Fixing double redirect to [[World Open (snooker)]]</comment>
+      <text xml:space="preserve">#REDIRECT [[World Open (snooker)]]</text>
+      <sha1>lxtjwcda9vk58fphj8ie2logjm607mv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>P/E</title>
+    <ns>0</ns>
+    <id>665004</id>
+    <redirect title="Priceâ€“earnings ratio" />
+    <revision>
+      <id>507387633</id>
+      <parentid>30491497</parentid>
+      <timestamp>2012-08-14T15:25:09Z</timestamp>
+      <contributor>
+        <username>AvicBot</username>
+        <id>11952314</id>
+      </contributor>
+      <minor />
+      <comment>Robot: Fixing double redirect to [[Priceâ€“earnings ratio]]</comment>
+      <text xml:space="preserve">#REDIRECT [[Priceâ€“earnings ratio]]</text>
+      <sha1>tbkxqhtkgm8qapwet8zthb6x56tbpjh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>McConnell v. Federal Election Commission</title>
+    <ns>0</ns>
+    <id>665005</id>
+    <revision>
+      <id>616804237</id>
+      <parentid>613472339</parentid>
+      <timestamp>2014-07-13T16:46:14Z</timestamp>
+      <contributor>
+        <username>Monkbot</username>
+        <id>20483999</id>
+      </contributor>
+      <minor />
+      <comment>/* Further reading */Task 4: Fix [[Help:CS1_errors#deprecated_params|CS1 deprecated coauthor parameter errors]]</comment>
+      <text xml:space="preserve">{{SCOTUSCase
+  |Litigants=McConnell v. Federal Election Commission
+  |ArgueDate=September 8
+  |ArgueYear=2003
+  |DecideDate=December 10
+  |DecideYear=2003
+  |FullName=Addison Mitchell McConnell v. Federal Election Commission
+  |Citation=124 S. Ct. 619; 157 L. Ed. 2d 491; 2003 U.S. LEXIS 9195; 72 U.S.L.W. 4015; 17 Fla. L. Weekly Fed. S 13
+  |USVol=540
+  |USPage=93
+  |Prior=Mixed ruling by the District Court for the District of Columbia 
+  |Holding=Not all political speech is protected by the First Amendment from government infringement.
+  |SCOTUS=1994-2005
+  |Majority=Stevens, O'Connor
+  |JoinMajority=Souter, Ginsburg, Breyer
+  |Majority2=Rehnquist
+  |JoinMajority2=O'Connor, Scalia, Kennedy, Souter
+  |Majority3=Breyer
+  |JoinMajority3=Souter, Ginsburg, Stevens, O'Connor
+  |Concurrence=Scalia
+  |Concurrence2=Thomas
+  |Concurrence3=Kennedy
+  |JoinConcurrence3=Rehnquist, Scalia
+  |Dissent=Rehnquist
+  |JoinDissent=Scalia, Kennedy
+  |Dissent2=Stevens
+  |JoinDissent2=Breyer, Ginsburg
+  |LawsApplied=[[First Amendment to the United States Constitution|U.S. Const. amend. I]]; 116 Stat. 81
+  |Overruled=''[[Citizens United v. Federal Election Commission]]'' (2010) (in part)
+}}
+'''''McConnell v. Federal Election Commission''''', [[Case citation|540 U.S. 93]] (2003),&lt;ref&gt;{{ussc|540|93|Full text of the decision courtesy of Findlaw.com}}&lt;/ref&gt; is a case in which the [[Supreme Court of the United States|United States Supreme Court]] upheld the [[constitutionality]] of most of the [[Bipartisan Campaign Reform Act of 2002]] (BCRA), often referred to as the [[John McCain|McCain]]â€“[[Russell Feingold|Feingold]] Act.
+
+The case takes its name from Senator [[Mitch McConnell]], [[Republican Party (United States)|Republican]] of [[Kentucky]], and the [[Federal Election Commission]], the federal agency that oversees U.S. campaign finance laws.
+
+It was partially overruled by ''[[Citizens United v. Federal Election Commission]]'', 558 U.S. 310 (2010).&lt;ref&gt;{{cite web|url=http://www.slate.com/id/2242209/|title=Money Grubbers: The Supreme Court kills campaign finance reform|first=Richard L.|last=Hasen|publisher=Slate|date=2010-01-21}}&lt;/ref&gt;
+
+==History==
+The case was brought by groups such as the [[California Democratic Party]] and the [[National Rifle Association]],&lt;ref&gt;{{cite web | url=http://www.cnn.com/2003/LAW/06/29/scotus.future/ | title =Campaign finance highlights next Supreme Court session | author =Kevin Drew | publisher =cnn.com | date =June 29, 2003}}&lt;/ref&gt; and individuals including U.S. Senator Mitch McConnell, then the Senate [[whip (politics)|Majority Whip]], who argued that the legislation was an unconstitutional infringement on their [[First Amendment to the United States Constitution|First Amendment]] rights.&lt;ref&gt;{{cite web | url=http://law2.umkc.edu/faculty/projects/ftrials/conlaw/campaign.htm | title =Campaign Finance Regulation and the First Amendment  | author =''[[University of Missouriâ€“Kansas City School of Law]]'' | publisher =umkc.edu | date =}}&lt;/ref&gt; Senator McConnell had been a longtime opponent of BCRA in the Senate, and had led several Senate [[filibuster]]s to block its passage.&lt;ref&gt;{{cite web | url=http://www.washingtonpost.com/wp-srv/politics/special/campfin/stories/cf100897a.htm | title =Campaign Finance Overhaul Blocked | author =Helen Dewar  | publisher =washingtonpost.com | date =October 8, 1997}}&lt;/ref&gt;&lt;ref name =&quot;MIT Herrnson&quot;&gt;{{cite web | url=http://www.mit.edu/~17.261/herrnson.pdf | title =The Bipartisan Campaign Reform Act and Congressional Elections | author =Paul S. Herrnson | author2 =''[[Massachusetts Institute of Technology]]'' | publisher =mit.edu | date =}}&lt;/ref&gt;
+
+In early 2002, a multi-year effort by Senators John McCain and Russell Feingold to reform the way money is raised and spent on political campaigns culminated in the passage of the Bipartisan Campaign Reform Act of 2002 (the so-called McCain-Feingold bill).&lt;ref name =&quot;MIT Herrnson&quot;/&gt; Its key provisions were 1) a ban on unrestricted (&quot;soft money&quot;) donations made directly to political parties (often by corporations, unions, or wealthy individuals) and on the solicitation of those donations by elected officials; 2) limits on the advertising that unions, corporations, and non-profit organizations can engage in up to 60 days prior to an election; and 3) restrictions on political parties' use of their funds for advertising on behalf of candidates (in the form of &quot;issue ads&quot; or &quot;coordinated expenditures&quot;).&lt;ref&gt;{{cite web | url=http://www.gpo.gov/fdsys/pkg/PLAW-107publ155/pdf/PLAW-107publ155.pdf | title =PUBLIC LAW 107â€“155â€”MAR. 27, 2002 1 Bipartisan Campaign Reform Act of 2002 | author =''[[United States Government Printing Office]]'' | publisher =gpo.gov}}&lt;/ref&gt;
+
+In May 2003, the [[United States District Court for the District of Columbia]] issued a ruling on the constitutionality of the law, but the ruling never took effect because the case was immediately appealed to the U.S. Supreme Court.
+
+==Oral arguments==
+The Supreme Court heard oral arguments in a special session on September 8, 2003.  On Wednesday, December 10, 2003, it issued a complicated decision totaling 272 pages in length, that, with a 5-4 majority, upheld the key provisions of McCain-Feingold including (1) the &quot;electioneering communication&quot; provisions (which required disclosure of and prohibited the use of corporate and union treasury funds to pay for or broadcast cable and satellite ads clearly identifying a federal candidate targeted to the candidate's electorate within 30 days of a primary or 60 days of a general election); and (2) the &quot;soft money&quot; ban (which prohibited federal parties, candidates, and officeholders from raising or spending funds not in compliance with contribution restrictions, and prohibited state parties from using such &quot;soft money&quot; in connection with federal elections).
+
+==Opinions==
+{{Expand section|date=February 2008}}
+Justices [[Stephen Breyer|Breyer]], [[John Paul Stevens|Stevens]], [[Sandra Day O'Connor|O'Connor]], [[David Souter|Souter]], and [[Ruth Bader Ginsburg|Ginsburg]] established the majority for two parts of the Court's opinion:
+*With respect to Titles I and II of the BCRA, Justices [[John Paul Stevens|Stevens]], [[Sandra Day O'Connor|O'Connor]] wrote the opinion of the Court.
+*With respect to Title V of the BCRA, Justice [[Stephen Breyer|Breyer]] wrote the Court's opinion.
+
+Because the regulations dealt mostly with soft-money contributions that were used to register voters and increase attendance at the polls, not with campaign expenditures (which are more explicitly a statement of political values and therefore deserve more protection), the Court held that the restriction on free speech was minimal. It then found that the restriction was justified by the government's legitimate interest in preventing &quot;both the actual corruption threatened by large financial contributions and... the appearance of corruption&quot; that might result from those contributions.
+
+In response to challenges that the law was too broad and unnecessarily regulated conduct that had not been shown to cause corruption (such as advertisements paid for by corporations or unions), the Court found that such regulation was necessary to prevent the groups from circumventing the law. Justices O'Connor and Stevens wrote that &quot;money, like water, will always find an outlet&quot; and that the government was therefore justified in taking steps to prevent schemes developed to get around the contribution limits.
+
+The Court also rejected the argument that Congress had exceeded its authority to regulate elections under Article I, Section 4 of the Constitution. The Court found that the law only affected state elections in which federal candidates were involved and also that it did not prevent states from creating separate election laws for state and local elections.
+
+Two dissenting opinions were included in the decision:
+*Justice [[John Paul Stevens|Stevens]], joined by Justices [[Ruth Bader Ginsburg|Ginsburg]], and [[Stephen Breyer|Breyer]], dissented on one section of the part of the Court's opinion written by the Chief Justice.
+*The Chief Justice, joined by Justice [[Anthony Kennedy|Kennedy]] and [[Antonin Scalia|Scalia]], issued a 15-page dissent against the Court's opinion with respect to Titles I and V of the BCRA.
+
+Three other justices wrote separate opinions on the decision:
+*Justice [[Anthony Kennedy|Kennedy]], joined by the Chief Justice, issued a 68-page dissenting opinion and appendix, noting that BCRA forces &quot;speakers to abandon their own preference for speaking through parties and organizations.&quot;
+*Justice [[Clarence Thomas|Thomas]] issued a separate 25-page dissenting opinion noting that the Court was upholding the &quot;most significant abridgment of the freedoms of [[freedom of speech|speech]] and [[freedom of association|association]] since the [[American Civil War|Civil War]].&quot;
+*Justice [[Antonin Scalia|Scalia]] issued a separate 19-page dissenting opinion, a &quot;few words of [his] own,&quot; because of the &quot;extraordinary importance&quot; of the cases.
+
+==Overturned Portions==
+On July 5, 2007, in ''[[Federal Election Commission v. Wisconsin Right to Life, Inc.]]'', the Supreme Court ruled that the organizations engaged in genuine discussion of issues were entitled to a broad, &quot;as applied&quot; exemption from the electioneering communications provisions of BCRA (those portions of BCRA that limited advertising that named a particular candidate by name within 30 days of a primary election and 60 days of a general election, if the ad was paid for by a corporation or union).  Many observers argue that the exemption crafted by the Court effectively nullifies those provisions of the Act and overrules that portion of McConnell, but the full impact of Wisconsin Right to Life remains to be seen.
+
+==See also==
+*[[List of United States Supreme Court cases, volume 540]]
+*[[List of United States Supreme Court cases]]
+*''[[Buckley v. Valeo]]'' (1976), regarding [[Federal Election Campaign Act]] of 1971
+
+==References==
+{{reflist}}
+
+==Further reading==
+*{{cite journal |last=Downie |first=Joshua |authorlink= |year=2004 |title=''McConnell v. FEC'': Supporting Congress and Congress's Attempt at Campaign Finance Reform |journal=Administrative Law Review |volume=56 |issue= |pages=927â€“936 |issn=00018368 |url= |accessdate= |quote= }}
+*{{cite book |chapter=Campaign Finance Reform and Free Speech |title=The Dirty Dozen: How Twelve Supreme Court Cases Radically Expanded Government and Eroded Freedom |last=Levy |first=Robert A. |authorlink=Robert A. Levy |author2=Mellor, William H. |year=2008 |publisher=Sentinel |location=New York |isbn=978-1-59523-050-8 |pages=89â€“106 }}
+*{{cite journal |last=Lowy |first=B. L. |authorlink= |year=2005 |title=Not Quite Shays' Rebellion: Putting ''McConnell v. Federal Election Commission'' in Perspective |journal=University of Miami Law Review |volume=60 |issue= |page=283 |issn=00419818 |url= |accessdate= |quote= }}
+
+==External links==
+*[http://web.archive.org/web/20070927233927/http://www.oyez.org/oyez/resource/case/1637/ Summary of case from OYEZ]
+
+{{DEFAULTSORT:Mcconnell V. Federal Election Commission}}
+{{US1stAmendment|speech|state=expanded}}
+[[Category:United States Supreme Court cases]]
+[[Category:United States Free Speech Clause case law]]
+[[Category:United States elections case law]]
+[[Category:Federal Election Commission]]
+[[Category:2003 in United States case law]]
+[[Category:United States Supreme Court cases of the Rehnquist Court]]
+[[Category:American Civil Liberties Union litigation]]
+[[Category:Overruled United States Supreme Court decisions]]</text>
+      <sha1>pesb5qlpmvuy8nr9jjz29eg36hk2lvv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Novindus</title>
+    <ns>0</ns>
+    <id>665006</id>
+    <revision>
+      <id>542572763</id>
+      <parentid>509799871</parentid>
+      <timestamp>2013-03-07T12:14:31Z</timestamp>
+      <contributor>
+        <username>Addbot</username>
+        <id>6569922</id>
+      </contributor>
+      <minor />
+      <comment>[[User:Addbot|Bot:]] Migrating 2 interwiki links, now provided by [[Wikipedia:Wikidata|Wikidata]] on [[d:q4176512]]</comment>
+      <text xml:space="preserve">'''Novindus''' is a fictional continent on [[Midkemia]], a world created by [[Raymond E. Feist]]. It is the second largest continent on Midkemia with a variety of landscapes. It is to the west of the [[Triagia]] across the Endless Sea and to the east across the Sea of Tears. The shape of the continent looks very much like [[India]]. The people of the Kingdom learned of the existence of the continent in ''[[Riftwar#Magician|Magician]]'', and first travelled to it after the destructive attacks on Crydee and its dependents described in ''[[Krondor's Sons#The King's Buccaneer|The King's Buccaneer]]''.
+
+Novindus is not a single nation, rather it is a collection of city-states which are spread out across the continent. The lands between are held by no one. There are few standing armies. Mercenary bands are normally hired to protect cargoes as they are shipped between cities. Its culture is similar to ancient Indian and ancient African of Earth.
+
+&lt;!--and the Sumanu mountains in the north.--&gt;
+
+==The Eastlands==
+The Vedra River flows from the Sothu Mountains into the Bay of Maharta, which is off the Blue Sea. The Forest of Askren is north of the Vedra River and the Mountains of the Sea. The Sumanu Mountains are in the north with Serpent Lake. Serpent Lake empties into the Serpent River that flows through the Forest of Askren and into the Blue Sea.
+
+===The Hotlands===
+The Hotlands are a vast desert which takes three days to cross on foot. It can be accessed from the Blue Sea by climbing the Great Cliffs. It is to the east of the Serpent River and Sumanu Mountains and north of the Forest of Askren. This is where the shipwrecked crew in ''[[Krondor's Sons#The King's Buccaneer|The King's Buccaneer]]'' landed.
+
+===Cities of the Eastlands===
+*Hamsa
+*Kilbar
+*Khaipur
+*Lanada
+*Maharta
+*City of the Serpent River
+*Shingazi's Landing
+
+==The Riverlands==
+East of the Ratn'Gary Mountains, home of the Pavilion of the Gods, is the Great South Forest. The River Dee flows from the Ratn'Gary Mountains into the Blue Sea. The Satpura River flows from the Forest of Irabek through the northern tip of the Ratn'Gary Mountains and empties into the Blue Sea north of the River Dee. The Plain of the Djams is bordered by the Satpura River to the south and the Vedra River to the north.
+
+===Cities of the Riverlands===
+*Port Grief
+*Palamds
+*Chaisthan
+*Ispar
+
+==The Westlands==
+The Sothu mountains, the Forest of Irabek, and the Ratn'Gary Mountains separate the Westlands from the rest of the continent. The Manstra River flows through the Horsehead Cape into the Green Sea. The Horsehead Cape forms the Bay of Sulth with the mainland.
+
+===Cities of the Westlands===
+*Sulth
+*Irabek
+*Point Punt
+*Westbury
+
+==People==
+Novindus is inhabited by men, dwarves, elves, the Pantathians, and tiger men. The Pantathians, servants of the [[Midkemia#Valheru|Valheru]] Alma-Lodaka, believed they could return their creator through the use of the Lifestone, which led to the Great Uprising and the events described in ''The Serpent War Saga''. The tiger men were servants of the Valheru Draken-Korin and live in the great south forest.
+
+==The Pavilion of the Gods==
+The Pavilion of the Gods is located in the Ratn'Gary Mountains in the southern tip of Novindus. This Pavilion is the gateway to the realm of the dead. Of all the people on Midkemia to enter only Kaspar, former Duke of Olasko; [[Pug (fictional character)|Pug]]; Tomas; and Magnus, Pug's son, have safely returned from the realm of the dead. There is a gateway here so that mortals can talk to the gods, however it is guarded and few are ever allowed to pass into the gateway.
+
+==Map link==
+[http://www.elvandar.com/novindus.htm Map of Novindus]
+
+{{The Riftwar Cycle}}
+
+[[Category:Raymond E. Feist]]
+[[Category:Fictional continents]]
+
+[[fr:Liste des lieux des Chroniques de Krondor#Novindus]]</text>
+      <sha1>pmm4upuc54oc54pvrywx1rzgjzs44zq</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+</mediawiki>
