@@ -1,5 +1,5 @@
 <Document>
-      <NumOfArtcl>1</NuOfArtcl>
+      <NumOfArtcl>1</NumOfArtcl>
       <Artcl>
           <Lbl>Slovensko</Lbl>
           <Wklnk>http://sk.wikipedia.org/wiki/Slovensko</Wklnk>
@@ -7,7 +7,7 @@
           <Rfrncs count="1">
             <Rfrnc>Zoznam_štátov</Rfrnc>
           </Rfrncs>
-          <Rdrcts counr="1">
+          <Rdrcts count="1">
             <Rdrct>SVK</Rdrct>
           </Rdrcts>
           <Extrnls count="1">
