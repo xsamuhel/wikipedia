@@ -1,0 +1,102 @@
+# This file is part of the ontology YAGO2s
+# It is licensed under a Creative-Commons Attribution License by the YAGO team
+# at the Max Planck Institute for Informatics/Germany.
+# See http://yago-knowledge.org for all details.
+# This file was generated on 2012-10-08 T 16:11:55.0700.
+# 
+# 
+# Stores the sizes, outlinks, and URLs of the Wikipedia articles of the YAGO entities.
+# OTHER
+
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<Puyi>	<hasWikipediaArticleLength>	"52954"^^xsd:integer .
+<Puyi>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Puyi> .
+<Puyi>	<linksTo>	<Hirohito> .
+<Puyi>	<linksTo>	<Zhou_Enlai> .
+<Edwin_Edwards>	<hasWikipediaArticleLength>	"48458"^^xsd:integer .
+<Edwin_Edwards>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Edwin_Edwards> .
+<Kid_Rock>	<hasWikipediaArticleLength>	"55917"^^xsd:integer .
+<Kid_Rock>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Kid_Rock> .
+<Kid_Rock>	<linksTo>	<Jennifer_Lopez> .
+<Susilo_Bambang_Yudhoyono>	<hasWikipediaArticleLength>	"49207"^^xsd:integer .
+<Susilo_Bambang_Yudhoyono>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Susilo_Bambang_Yudhoyono> .
+<Deval_Patrick>	<hasWikipediaArticleLength>	"60879"^^xsd:integer .
+<Deval_Patrick>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Deval_Patrick> .
+<Deval_Patrick>	<linksTo>	<Africa> .
+<Deval_Patrick>	<linksTo>	<John_Quincy_Adams> .
+<Faye_Wong>	<hasWikipediaArticleLength>	"69057"^^xsd:integer .
+<Faye_Wong>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Faye_Wong> .
+<Hu_Jintao>	<hasWikipediaArticleLength>	"48059"^^xsd:integer .
+<Hu_Jintao>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Hu_Jintao> .
+<Hu_Jintao>	<linksTo>	<Africa> .
+<Sete_Gibernau>	<hasWikipediaArticleLength>	"62234"^^xsd:integer .
+<Sete_Gibernau>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Sete_Gibernau> .
+<Michael_Foot>	<hasWikipediaArticleLength>	"50348"^^xsd:integer .
+<Michael_Foot>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Michael_Foot> .
+<Michael_Foot>	<linksTo>	<James_Callaghan> .
+<Michael_Foot>	<linksTo>	<Rupert_Murdoch> .
+<Michael_Foot>	<linksTo>	<John_Major> .
+<Kim_Philby>	<hasWikipediaArticleLength>	"57491"^^xsd:integer .
+<Kim_Philby>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Kim_Philby> .
+<Sacha_Baron_Cohen>	<hasWikipediaArticleLength>	"53395"^^xsd:integer .
+<Sacha_Baron_Cohen>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Sacha_Baron_Cohen> .
+<Sacha_Baron_Cohen>	<linksTo>	<Jessica_Simpson> .
+<Sacha_Baron_Cohen>	<linksTo>	<Newt_Gingrich> .
+<Sacha_Baron_Cohen>	<linksTo>	<Donald_Trump> .
+<Hank_Azaria>	<hasWikipediaArticleLength>	"74228"^^xsd:integer .
+<Hank_Azaria>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Hank_Azaria> .
+<Hank_Azaria>	<linksTo>	<Elvis_Costello> .
+<Hank_Azaria>	<linksTo>	<Ben_Stiller> .
+<Hank_Azaria>	<linksTo>	<Nancy_Cartwright> .
+<Amitabh_Bachchan>	<hasWikipediaArticleLength>	"57757"^^xsd:integer .
+<Amitabh_Bachchan>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Amitabh_Bachchan> .
+<Amitabh_Bachchan>	<linksTo>	<Satyajit_Ray> .
+<Fredrik_Reinfeldt>	<hasWikipediaArticleLength>	"45749"^^xsd:integer .
+<Fredrik_Reinfeldt>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Fredrik_Reinfeldt> .
+<Lenny_Kravitz>	<hasWikipediaArticleLength>	"48623"^^xsd:integer .
+<Lenny_Kravitz>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Lenny_Kravitz> .
+<Lenny_Kravitz>	<linksTo>	<Nicole_Kidman> .
+<Lenny_Kravitz>	<linksTo>	<John_Lennon> .
+<Fyodor_Dostoyevsky>	<hasWikipediaArticleLength>	"49093"^^xsd:integer .
+<Fyodor_Dostoyevsky>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Fyodor_Dostoyevsky> .
+<Fyodor_Dostoyevsky>	<linksTo>	<Rowan_Williams> .
+<Fyodor_Dostoyevsky>	<linksTo>	<Vladimir_Nabokov> .
+<Fyodor_Dostoyevsky>	<linksTo>	<James_Joyce> .
+<Esther_Williams>	<hasWikipediaArticleLength>	"48190"^^xsd:integer .
+<Esther_Williams>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Esther_Williams> .
+<Esther_Williams>	<linksTo>	<Gene_Kelly> .
+<Esther_Williams>	<linksTo>	<Clark_Gable> .
+<Esther_Williams>	<linksTo>	<Judy_Garland> .
+<Esther_Williams>	<linksTo>	<Lucille_Ball> .
+<Gavin_Newsom>	<hasWikipediaArticleLength>	"52737"^^xsd:integer .
+<Gavin_Newsom>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Gavin_Newsom> .
+<Princess_Helena_of_the_United_Kingdom>	<hasWikipediaArticleLength>	"46229"^^xsd:integer .
+<Princess_Helena_of_the_United_Kingdom>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Princess_Helena_of_the_United_Kingdom> .
+<Princess_Helena_of_the_United_Kingdom>	<linksTo>	<Princess_Beatrice_of_the_United_Kingdom> .
+<Oscar_De_La_Hoya>	<hasWikipediaArticleLength>	"54657"^^xsd:integer .
+<Oscar_De_La_Hoya>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Oscar_De_La_Hoya> .
+<Jon_Voight>	<hasWikipediaArticleLength>	"50516"^^xsd:integer .
+<Jon_Voight>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Jon_Voight> .
+<Jon_Voight>	<linksTo>	<Tom_Cruise> .
+<Jon_Voight>	<linksTo>	<Laurence_Olivier> .
+<Jon_Voight>	<linksTo>	<Newt_Gingrich> .
+<Jon_Voight>	<linksTo>	<Jane_Fonda> .
+<Jon_Voight>	<linksTo>	<John_Wayne> .
+<Jon_Voight>	<linksTo>	<Hank_Azaria> .
+<Jon_Voight>	<linksTo>	<Ben_Stiller> .
+<Jon_Voight>	<linksTo>	<Mike_Huckabee> .
+<Gary_Oldman>	<hasWikipediaArticleLength>	"59282"^^xsd:integer .
+<Gary_Oldman>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Gary_Oldman> .
+<Gary_Oldman>	<linksTo>	<Maggie_Gyllenhaal> .
+<Jack_Dann>	<hasWikipediaArticleLength>	"47490"^^xsd:integer .
+<Jack_Dann>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Jack_Dann> .
+<Jack_Dann>	<linksTo>	<Roald_Dahl> .
+<Ralph_Flanders>	<hasWikipediaArticleLength>	"47297"^^xsd:integer .
+<Ralph_Flanders>	<hasWikipediaUrl>	<http://en.wikipedia.org/wiki/Ralph_Flanders> .
