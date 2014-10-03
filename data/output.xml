@@ -1,0 +1,21 @@
+<Document>
+      <NumOfArtcl>1</NuOfArtcl>
+      <Artcl>
+          <Lbl>Slovensko</Lbl>
+          <Wklnk>http://sk.wikipedia.org/wiki/Slovensko</Wklnk>
+          <Abstrct>Slovensko, dlhý tvar Slovenská republika, je vnútrozemský štát v strednej Európe. Má rozlohu 49 036 km² a žije tu približne 5,43 milióna obyvateľov. Hraničí s Českom (251,8 km), Rakúskom (107,1 km), Poľskom (541,1 km), Ukrajinou (97,8 km) a Maďarskom (654,8 km). Hlavným a najľudnatejším mestom je Bratislava.Prvý štátny útvar Slovanov na území dnešného Slovenska bola Samova ríša (7. storočie), neskôr Nitrianske kniežatstvo (začiatok 9.</Abstrct>
+          <Rfrncs count="1">
+            <Rfrnc>Zoznam_štátov</Rfrnc>
+          </Rfrncs>
+          <Rdrcts counr="1">
+            <Rdrct>SVK</Rdrct>
+          </Rdrcts>
+          <Extrnls count="1">
+            <Extrnl>http://www.slovensko.com</Extrnl>
+          </Extrnls>
+          <Ctgrs count="1">
+            <Ctgr>Krajiny_EÚ</Ctgr>
+          </Ctrgs>
+      </Artcl>
+</Document>
+      
