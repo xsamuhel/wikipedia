@@ -1,0 +1,241 @@
+﻿<root>
+	<header>
+		<section>Crew</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+				<subsections>
+					<sub>Backup crew</sub>
+					<sub>Support crew</sub>
+					<sub>Flight directors</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+				<subsections>
+					<sub>Backup crew</sub>
+					<sub>Support crew</sub>
+					<sub>Flight directors</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+				<subsections>
+					<sub>Backup crew</sub>
+					<sub>Support crew</sub>
+					<sub>Mission insignia</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Mission parameters</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+				<subsections>
+					<sub>LM – CSM docking</sub>
+					<sub>EVAs</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+				<subsections>
+					<sub>Earth parking orbit</sub>
+					<sub>LM-CSM docking</sub>
+					<sub>EVAs</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Mission highlights</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+				<subsections>
+					<sub>Launch and flight to lunar orbit</sub>
+					<sub>Lunar descent</sub>
+					<sub>Lunar surface operations</sub>
+					<sub>Return, splashdown and quarantine</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+				<subsections>
+					<sub>Launch and outbound trip</sub>
+					<sub>Landing</sub>
+					<sub>Lunar surface</sub>
+					<sub>Return to Earth</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+				<subsections>
+					<sub>Launch and outbound trip</sub>
+					<sub>Lunar surface</sub>
+					<sub>Return to Earth</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Mission insignia</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Spacecraft location</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Gallery</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>See also</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>References</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+				<subsections>
+					<sub>Apollo Lunar Surface Journal</sub>
+				</subsections>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+				<subsections>
+					<sub>Bibliography</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Bibliography</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>External links</section>
+		<articles>
+			<article>
+				<title>Apollo 14</title>
+			</article>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Planning and training</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+			<article>
+				<title>Apollo 16</title>
+				<subsections>
+					<sub>Landing site selection</sub>
+					<sub>Training</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Hardware</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+				<subsections>
+					<sub>Spacecraft</sub>
+					<sub>Lunar Rover</sub>
+					<sub>Lunar subsatellite</sub>
+					<sub>Launch vehicle</sub>
+					<sub>Space suits</sub>
+				</subsections>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Scandals</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Visibility from space</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Multimedia</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Depiction in popular culture</section>
+		<articles>
+			<article>
+				<title>Apollo 15</title>
+			</article>
+		</articles>
+	</header>
+	<header>
+		<section>Lunar subsatellite PFS-2</section>
+		<articles>
+			<article>
+				<title>Apollo 16</title>
+			</article>
+		</articles>
+	</header>
+</root>
