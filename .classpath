@@ -8,5 +8,7 @@
 	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3_xpath-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/commons-lang3-3.3.2/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/commons-lang3-3.3.2/commons-lang3-3.3.2-javadoc.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
