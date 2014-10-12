@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xstream-1.4.7.jar" sourcepath="C:/VI/lib/xstream-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xstream-benchmark-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xstream-hibernate-1.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3_xpath-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="C:/VI/lib/xpp3-1.1.4c/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
