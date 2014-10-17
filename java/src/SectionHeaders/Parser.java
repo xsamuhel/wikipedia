@@ -1,3 +1,4 @@
+package SectionHeaders;
 /*
 	autor: Patrik Samuhel
 	nazov: Section_Pareser
@@ -16,15 +17,48 @@ import org.apache.commons.lang3.StringUtils;
 public class Parser {
 
 	public static void main(String[] args) throws IOException {
-		mediawiki data;
 
-		if ((data = dataLoad("data\\sample_input_enwiki-latest-pages-articles1.xml")) == null) {
-			return;
-		}
-
-		Root root = parseHeaders(data);
-
+		System.out.println(start("data\\sample_input_enwiki-latest-pages-articles1.xml"));
 		System.out.println("koniec");
+
+	}
+	
+	public static String start(String path){
+		mediawiki data;
+		Root root;
+		
+//		if ((data = dataLoad("data\\enwiki-latest-pages-articles25.xml")) == null) {
+//			return "";
+//		}
+		
+		if ((data = dataLoad(path)) == null) {
+			return "";
+		}
+		root = parseHeaders(data);
+		
+		return output(root, data);
+	}
+	
+	public static String output(Root root, mediawiki data){
+		
+		String maxDFHeader = "";
+		double maxDF = 0;
+		String outputString = "";
+		
+		outputString += "Output\n\n";
+		for (SectionHeader sectionHeader : root.getListOfSectionHeaders()) {
+			sectionHeader.setDocumentFrequency((double)sectionHeader.getArticlesList().size() / (double)data.getPages().size());
+			outputString += sectionHeader.getname() + ": " + sectionHeader.getDocumentFrequency() + "\n";
+			if(maxDF < sectionHeader.documentFrequency){
+				maxDF = sectionHeader.documentFrequency;
+				maxDFHeader = sectionHeader.getname();
+			}
+		}
+		
+		outputString += "\n----------\n";
+		outputString += "Biggest DF:\n"+"Section - " + maxDFHeader + "\nDF - " + maxDF;
+
+		return outputString;
 	}
 
 	private static Root parseHeaders(mediawiki data) {
@@ -47,6 +81,9 @@ public class Parser {
 
 			for (String line : textLines) {
 				skip = false;
+				if(line.startsWith("====")){
+					break;
+				}
 				if (line.startsWith("===")) {
 					header = StringUtils.strip(line, "===").trim();
 					last.getSubsecionsList().add(new SubSection(header));

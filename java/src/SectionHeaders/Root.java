@@ -1,3 +1,5 @@
+package SectionHeaders;
+
 import java.util.ArrayList;
 
 
@@ -16,6 +18,7 @@ class SectionHeader{
 	
 	private String name;
 	private ArrayList<Article> articles;
+	public double documentFrequency = 0;
 	
 	public SectionHeader(String name){
 		this.name = name;
@@ -28,6 +31,14 @@ class SectionHeader{
 	
 	public ArrayList<Article> getArticlesList(){
 		return this.articles;
+	}
+	
+	public void setDocumentFrequency(double value){
+		this.documentFrequency = value;
+	}
+	
+	public double getDocumentFrequency(){
+		return documentFrequency;
 	}
 }
 

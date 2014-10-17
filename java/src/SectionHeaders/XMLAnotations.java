@@ -1,3 +1,5 @@
+package SectionHeaders;
+
 import java.util.ArrayList;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
@@ -14,6 +16,37 @@ class mediawiki{
     ArrayList<page> getPages(){
     	return pages;
     }
+    
+    @XStreamAlias("siteinfo")
+    private siteinfo siteinfo;
+}
+
+@XStreamAlias("siteinfo")
+class siteinfo{
+	 @XStreamAlias("sitename")
+	 private String sitename;
+    
+	 @XStreamAlias("dbname")
+	 private String dbname;
+	 
+	 @XStreamAlias("base")
+	 private String base;
+    
+	 @XStreamAlias("generator")
+	 private String generator;
+	 
+	 @XStreamAlias("case")
+	 private String casee;
+	 
+	 @XStreamAlias("namespaces")
+     private namespaces namespaces;
+}
+
+@XStreamAlias("namespaces")
+class namespaces{
+	
+	@XStreamAlias("namespace")
+	private String namespace;
 }
 
 @XStreamAlias("page")
@@ -27,6 +60,12 @@ class page{
     
     @XStreamAlias("id")
     private String id;
+    
+    @XStreamAlias("redirect")
+    private String redirect;
+    
+    @XStreamAlias("restrictions")
+    private revision restrictions;
     
     @XStreamAlias("revision")
     private revision revision;
@@ -88,4 +127,7 @@ class contributor{
     
     @XStreamAlias("id")
     private String id;
+    
+    @XStreamAlias("ip")
+    private String ip;
 }
