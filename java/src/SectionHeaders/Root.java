@@ -1,15 +1,15 @@
 package SectionHeaders;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 
 public class Root {
 
 	public int SetinoHeadersCount = 0;
 
-	private LinkedHashMap<String, SectionHeader> SectionsList = new LinkedHashMap<String, SectionHeader>();
+	private HashMap<String, SectionHeader> SectionsList = new HashMap<String, SectionHeader>();
 
-	public LinkedHashMap<String, SectionHeader> getListOfSectionHeaders() {
+	public HashMap<String, SectionHeader> getListOfSectionHeaders() {
 		return this.SectionsList;
 	}
 }
@@ -17,7 +17,7 @@ public class Root {
 class SectionHeader {
 
 	private String name;
-	private ArrayList<Article> articles;
+	private ArrayList<String> articles;
 	public Double documentFrequency = 0.0;
 	public Double collectionFrequency = 0.0;
 
@@ -31,14 +31,14 @@ class SectionHeader {
 
 	public SectionHeader(String name) {
 		this.name = name;
-		this.articles = new ArrayList<Article>();
+		this.articles = new ArrayList<String>();
 	}
 
 	public String getname() {
 		return this.name;
 	}
 
-	public ArrayList<Article> getArticlesList() {
+	public ArrayList<String> getArticlesList() {
 		return this.articles;
 	}
 
@@ -55,35 +55,13 @@ class SectionHeader {
 class Article {
 
 	private String title;
-	private ArrayList<SubSection> subsections;
 
 	public Article(String title) {
 		this.title = title;
-		subsections = new ArrayList<SubSection>();
 	}
 
 	public String getTitle() {
 		return this.title;
-	}
-
-	public ArrayList<SubSection> getSubsecionsList() {
-		return this.subsections;
-	}
-}
-
-class SubSection {
-	private String SubName;
-
-	public SubSection(String name) {
-		this.SubName = name;
-	}
-
-	public SubSection() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public String getSubName() {
-		return SubName;
 	}
 }
 

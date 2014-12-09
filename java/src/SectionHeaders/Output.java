@@ -2,6 +2,7 @@ package SectionHeaders;
 
 import java.util.ArrayList;
 
+//struktura pre prvu cast vystupneho suboru
 class Output {
 	public String sectionHeader;
 	public double documentFrequency;
@@ -12,6 +13,7 @@ class Output {
 	}
 }
 
+//struktura pre druhu cast vystupneho suboru
 class OutputGazetteer {
 	public String sectionHeader;
 	public ArrayList<String> sectionHeadersList;

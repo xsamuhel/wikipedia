@@ -8,13 +8,19 @@ package SectionHeaders;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.xml.stream.XMLEventReader;
@@ -32,65 +38,79 @@ public class Parser {
 
 	static int pages = 0;
 	static double start, stop;
+	static String outputCountString = "all";
 
 	public static void main(String args[]) throws Exception {
 		
-		//"C:\\VI\\enwiki-latest-pages-articles.xml.bz2";
-		//"C:\\VI\\enwiki-latest-pages-articles25";
-		//"C:\\VI\\enwiki-latest-pages-articles3.xml-p000025001p000055000";		
-		//"C:\\VI\\wiki2.xml";
-		//"data\\sample_input_enwiki-latest-pages-articles1.xml";
-		String xmlFile = "";
-		PrintWriter out = new PrintWriter("output.txt");
-
-		System.out.println("Zadajte cestu ku vstupnemu suboru (napr: \"C:\\wiki\\input.xml\"): ");
+		String xmlFileInput = "";
+		String xmlFileOutput = "";
+		int outputCount = 0;
 		
-		//nacitanie suboru z konzoly
+		//nacitanie vstupu z konzoly
 		BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 		try{
-			xmlFile = bufferRead.readLine();
+			System.out.println("Zadajte cestu ku vstupnemu suboru (napr: \"C:\\wiki\\input.xml\"): ");
+			xmlFileInput = bufferRead.readLine();
+			System.out.println("Zadajte cestu ku vstupnemu suboru (napr: \"C:\\wiki\\output.xml\"): ");
+			xmlFileOutput =  bufferRead.readLine();
+			System.out.println("Zadajte pocet section headerov vo vystupnom subore (prazdny vstup vypise vsetko): ");
+			outputCountString = bufferRead.readLine();
+			if(outputCountString.equals("")){
+				outputCountString = "all";
+			}
+			else{
+				outputCountString = "";
+				outputCount = Integer.parseInt(outputCountString);
+			}
 		}
 		catch(Exception ex){
-			System.out.println(ex.getMessage());
+			//ukoncenie programu v pripade zleho vstupu
+			System.out.println("Chybny vstup: " + ex.getMessage());
+			return;
 		}
 		
 		//casovac
 		start = System.currentTimeMillis();
-		out.println(Start(xmlFile));
+		Writer out = new BufferedWriter(new OutputStreamWriter(
+			    new FileOutputStream(xmlFileOutput), "UTF-8"));
+			try {
+				//zapis spracovanych do suboru
+			    out.write(Start(xmlFileInput, outputCount));
+			} finally {
+			    out.close();
+			}
+
 		stop = System.currentTimeMillis();
-		System.out.println("Elapsed time: " + (double)((double)(stop - start)/(double)1000) + " miliSec");
+		System.out.println("Elapsed time: " + (double)((double)(stop - start)/(double)1000) + " sec");
 
 		out.close();
 		return;
 	}
 
-	public static String Start(String path) {
+	public static String Start(String path, int outputCount) throws IOException {
 
+		//vytvorenie struktury 
 		Root root = getItemsFromXml(path);
 		
 		stop = System.currentTimeMillis();
 		System.out.println("Nacitanie dat skoncilo\n"
-							+ "Elapsed time: " + (double)((double)(stop - start)/(double)1000) + " miliSec\n"
+							+ "Elapsed time: " + (double)((double)(stop - start)/(double)1000) + " sec\n"
 							+ "Zaciatok vypoctu pomocou gazetteers a zapis vystupu do suboru");
 		
-		return Output(root, pages);
+		return Output(root, pages, outputCount);
 	}
 
-	// @SuppressWarnings("unchecked")
 	public static Root getItemsFromXml(String xmlFile) {
 
 		String startElementName;
 		Root root = null;
-		LinkedHashMap<String, SectionHeader> sectionList;
+		HashMap<String, SectionHeader> sectionList;
 		String title = "";
 		String text = "";
 		XMLEventReader inputEventReader;
 		XMLInputFactory inputFactory;
 
 		try {
-			// create xml reader event with inputstream
-			
-			
 			//kontrola ci ide o xml alebo bz2
 			if((xmlFile.substring(xmlFile.lastIndexOf('.') + 1, xmlFile.length())).equals("bz2")){
 				
@@ -110,14 +130,12 @@ public class Parser {
 						.createXMLEventReader(br2);
 			}
 			
-
-
 			root = new Root();
 			sectionList = root.getListOfSectionHeaders();
 
+			//citanie elementov xml suboru
 			while (inputEventReader.hasNext()) {
-				// xml reader event to get event and determine start element and
-				// end element
+
 				XMLEvent event = inputEventReader.nextEvent();
 
 				if (event.isStartElement()) {
@@ -125,34 +143,19 @@ public class Parser {
 							.getLocalPart();
 
 					if (startElementName.equals("title")) {
-						//event = inputEventReader.nextEvent();
-						title = inputEventReader.getElementText(); //event.asCharacters().getData();
+						title = inputEventReader.getElementText();
 					}
 
 					if (startElementName.equals("text")) {
 						pages++;
-						//event = inputEventReader.nextEvent();
-						text += inputEventReader.getElementText();//event.asCharacters().getData();
-						//event = inputEventReader.nextEvent();
-//						while (!event.isEndElement()) {
-//							text += event.asCharacters().getData();
-//							event = inputEventReader.nextEvent();
-//						}
+						text += inputEventReader.getElementText();
+
 
 						ParseText(sectionList, title, text, root);
 						text = "";
 					}
 
 				}
-
-				// if (event.isEndElement()) {
-				// EndElement endElement = event.asEndElement();
-				// String endElementName = endElement.asEndElement().getName()
-				// .getLocalPart();
-				// if (endElementName.equals("page")) {
-				// //items.add(newItem);
-				// }
-				// }
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -162,64 +165,57 @@ public class Parser {
 		return root;
 	}
 
-	private static void ParseText(LinkedHashMap<String, SectionHeader> sectionList,
+	private static void ParseText(HashMap<String, SectionHeader> sectionList,
 			String title, String text, Root root) {
 
 		String[] lines = text.split("\n");
 		String header;
-		Article last = null;
-		ArrayList<Article> articleList = null;
+		ArrayList<String> articleList = null;
 
 		for (String line : lines) {
 			if (line.startsWith("===")) {
-				if (line.startsWith("====") || (last == null)) {
+				continue;
+			}
+			else if (line.startsWith("==") && (line.endsWith("=="))) {
+				header = StringUtils.strip(line, "==").trim();
+				
+				if(sectionList.containsKey(header)){
+					articleList = sectionList.get(header).getArticlesList();
+					articleList.add(title);
 					continue;
 				}
-				header = StringUtils.strip(line, "===").trim();
-				last.getSubsecionsList().add(new SubSection(header));
-			} else if (line.startsWith("==") && (line.endsWith("=="))) {
-				header = StringUtils.strip(line, "==").trim();
-				if (sectionList.isEmpty()) {
+				else if (sectionList.isEmpty()) {
 					sectionList.put(header, new SectionHeader(header));
 					root.SetinoHeadersCount++;
 					articleList = sectionList.get(header).getArticlesList();
-					articleList.add(new Article(title));
-					last = articleList.get(articleList.size() - 1);
-					continue;
-				}
-				if(sectionList.containsKey(header)){
-					articleList = sectionList.get(header).getArticlesList();
-					articleList.add(new Article(title));
-					last = articleList.get(articleList.size() - 1);
+					articleList.add(title);
 					continue;
 				}
 				else{
 					sectionList.put(header, new SectionHeader(header));
 					root.SetinoHeadersCount++;
 					articleList = sectionList.get(header).getArticlesList();
-					articleList.add(new Article(title));
-					last = articleList.get(articleList.size() - 1);
+					articleList.add(title);
 					continue;
 				}
 			}
-			
 		}
-
 		return;
-
 	}
 
-	public static String Output(Root root, int pages) {
+	public static String Output(Root root, int pages, int outputCount) throws IOException{
 
 		StringBuilder outputString = new StringBuilder();
 		String sectionName;
 		SectionHeader sectionData;
 		ArrayList<Output> output = new ArrayList<Output>();
 		ArrayList<OutputGazetteer> outputGaz = new ArrayList<OutputGazetteer>();
-		StringBuilder gazetteersString = new StringBuilder();
-		boolean pridane;
+		StringBuilder gazetteersString = new StringBuilder();		
 		
-		LinkedHashMap<String, SectionHeader> allSections = root.getListOfSectionHeaders();
+		//odkomenovat v pripade pozadovaneho vytvorenia dalsieho vystupu
+		//writeArticleNamesIntoFile(root);
+		
+		HashMap<String, SectionHeader> allSections = root.getListOfSectionHeaders();
 		
 		CharacterGazetteer gazetteer = new CharacterGazetteer(Representation.CHILDSIBLING, true);
 
@@ -237,29 +233,29 @@ public class Parser {
 			sectionData.setDocumentFrequency(round((double) sectionData.getArticlesList().size() / (double) pages, 5));
 			sectionData.setCollectionFrequency(round((double) sectionData.getArticlesList().size() / (double) root.SetinoHeadersCount, 5));
 			
-			pridane = false;
-			
+			//uvolnenie pamate
+			sectionData.getArticlesList().clear();
+
 			//vypocita TOP document frequency
 			for(int i = 0; i < output.size(); i++){
-				if(output.get(i).documentFrequency < sectionData.getDocumentFrequency()){
+				if(output.get(i).documentFrequency <= sectionData.getDocumentFrequency()){
 					output.add(i, new Output(sectionData.getname(),sectionData.getDocumentFrequency()));
-					pridane = true;
 					break;
 				}
-				
-				//if(i==9)break;
+				if(outputCountString.equals("all")){
+					continue;
+				}
+				else if(i==outputCount)break;
 			}
-			if(output.size() == 0 || pridane == false){
+			if(output.size() == 0){
 				output.add(new Output(sectionData.getname(),sectionData.getDocumentFrequency()));
 			}
 			
 		}
 		
-
-		
 		List<int[]> matches = gazetteer.find(gazetteersString.toString());
 		
-		LinkedHashMap<String, ArrayList<String>> finalgazetteers = new LinkedHashMap<String, ArrayList<String>>();
+		HashMap<String, ArrayList<String>> finalgazetteers = new HashMap<String, ArrayList<String>>();
 
 		String found = "";
 		int start;
@@ -290,11 +286,14 @@ public class Parser {
 			found = "";
 		}
 		
-		//vypise TOP10 document frequency
+		//vypise pozadovane mnozstvo section headerov
 		for(int i = 0; i < output.size(); i++){
 			outputString.append(output.get(i).sectionHeader + ": " + output.get(i).documentFrequency + "\n");
 			
-			//if(i==9)break;
+			if(outputCountString.equals("all")){
+				continue;
+			}
+			else if(i==outputCount)break;
 		}
 		
 		outputString.append("\n----------\n");
@@ -307,30 +306,36 @@ public class Parser {
 		
 		for (String entry : finalgazetteers.keySet()) {
 			
-			pridane = false;
-			
-			//vypocita TOP gazetteers
+			//vypocita pozadovaneho poctu gazetteers
 			for(int i = 0; i < outputGaz.size(); i++){
-				if(outputGaz.get(i).sectionHeadersList.size() < finalgazetteers.get(entry).size()){
+				if(outputGaz.get(i).sectionHeadersList.size() <= finalgazetteers.get(entry).size()){
 					outputGaz.add(i, new OutputGazetteer(entry, finalgazetteers.get(entry)));
-					pridane = true;
 					break;
 				}
 				
-				//if(i==9)break;
+				if(outputCountString.equals("all")){
+					continue;
+				}
+				else if(i==outputCount)break;
 			}
-			if(outputGaz.size() == 0 || pridane == false){
+			if(outputGaz.size() == 0){
 				outputGaz.add(new OutputGazetteer(entry ,finalgazetteers.get(entry)));
 			}
 			
 		}
 		
 		for(int i = 0; i < outputGaz.size(); i++){
-			outputString.append(outputGaz.get(i).sectionHeader + " [" + outputGaz.get(i).sectionHeadersList.size() + "]:\n");
-			for (String gaz : outputGaz.get(i).sectionHeadersList) {
-				outputString.append("- " + gaz + "\n");
+			outputString.append(outputGaz.get(i).sectionHeader + " [" + outputGaz.get(i).sectionHeadersList.size() + "]\n");
+			
+			//vypis headrov v ktorych sa nachadza iny header
+//			for (String gaz : outputGaz.get(i).sectionHeadersList) {
+//				outputString.append("- " + gaz + "\n");
+//			}
+			
+			if(outputCountString.equals("all")){
+				continue;
 			}
-			//if(i==9)break;
+			else if(i==outputCount)break;
 		}
 	
 
@@ -339,9 +344,39 @@ public class Parser {
 		return outputString.toString();
 	}
 	
+	//pridavny vystup pre kontrolu alternativnych mien clankov
+	private static void writeArticleNamesIntoFile(Root root) throws IOException{
+		
+		String sectionName;
+		ArrayList<String> articleList;
+		
+		PrintWriter pw = new PrintWriter(new FileWriter("output - articles.txt"));
+		
+		HashMap<String, SectionHeader> allSections = root.getListOfSectionHeaders();
+		Iterator<String> mapIterator = root.getListOfSectionHeaders().keySet().iterator();
+		
+		try{
+			while(mapIterator.hasNext()){
+				sectionName = mapIterator.next();
+				articleList = allSections.get(sectionName).getArticlesList();
+				
+				if(articleList.size() > 1)continue;
+				
+				for (String article : articleList) {
+					pw.println(sectionName + " - " + article );
+				}
+			}
+		}
+		catch(Exception e){
+			System.out.println("Chyba pri zapise do suboru s nazvami clankov: " + e.getMessage());
+		}
+		finally{
+			pw.close();
+		}
+	}
+
+	//zaokruhlenie
 	public static double round(double d, int decimalPlace){
-	    // see the Javadoc about why we use a String in the constructor
-	    // http://java.sun.com/j2se/1.5.0/docs/api/java/math/BigDecimal.html#BigDecimal(double)
 	    BigDecimal bd = new BigDecimal(Double.toString(d));
 	    bd = bd.setScale(decimalPlace,BigDecimal.ROUND_HALF_UP);
 	    return bd.doubleValue();
